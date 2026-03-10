@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EAF423A8-6D30-B473-02C6-69A1D14B001D" name="ORDER_ITEMS">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:28:34 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ITEM_ID" id="7B149929-58C7-0BCE-DE08-F0C92FCF13C3">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:29:12 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>100</dataTypeScale>
+<ownDataTypeParameters>,0,100</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUANTITY" id="F2883B39-4C8B-9896-41F1-43A060A85393">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:29:50 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>20</dataTypeScale>
+<ownDataTypeParameters>,0,20</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE" id="2DC74702-8015-035F-E6C6-0F59A41B5FCA">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:30:45 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>20</dataTypeScale>
+<ownDataTypeParameters>,3,20</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCT_ID" id="EE5E9AE3-7EF0-590E-39F9-C73C5684B89E">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:31:10 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>100</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9F31EE30-FB54-30A0-351B-F74077BF81CB" referredColumn="0DCF623D-3E99-942F-5B4C-7EF4BABE6A77"/>
+</associations>
+</Column>
+<Column name="ORDER_ID" id="8B205C4E-9046-370C-03EF-0AD0D8DFE3AD">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:33:17 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>100</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F9312AE3-6E28-0487-A852-BC2537F10C40" referredColumn="1234AA9C-A954-2785-6431-8165382216F5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2DEB6586-AB6F-D9ED-AEAA-F24B4065E69F" name="ORDER_ITEMS_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:29:12 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B149929-58C7-0BCE-DE08-F0C92FCF13C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC35E0E8-F46B-789C-6558-BC543022B233" name="ORDER_ITEMS_PRODUCTS_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:31:10 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE5E9AE3-7EF0-590E-39F9-C73C5684B89E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79D9675C-EFED-D280-23C4-BB8B732CD286" name="ORDER_ITEMS_ORDERS_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:33:17 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B205C4E-9046-370C-03EF-0AD0D8DFE3AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

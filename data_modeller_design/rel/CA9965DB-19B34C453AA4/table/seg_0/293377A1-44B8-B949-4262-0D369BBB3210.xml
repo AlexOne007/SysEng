@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="293377A1-44B8-B949-4262-0D369BBB3210" name="ORDERS">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:21:28 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ORDER_ID" id="1234AA9C-A954-2785-6431-8165382216F5">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:21:54 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>100</dataTypeScale>
+<ownDataTypeParameters>,0,100</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_ID" id="A565F09C-1529-9D65-8D2A-2355ED5E4FC8">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:24:34 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>100</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2454F26-066D-192E-CBBE-621FCD1AF61E" referredColumn="9CFE73DD-3DB5-DADF-8012-D6FE8FA42BA5"/>
+</associations>
+</Column>
+<Column name="CREATION_TIME" id="BA5F2B33-4450-5A33-73A0-D711EA691C1E">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:27:47 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="B6250BA9-851B-90AE-8706-916162F00C5A">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:28:12 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7CEC2FB1-D3E3-A028-51EC-C03E5AF9BD5D" name="ORDERS_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:21:54 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1234AA9C-A954-2785-6431-8165382216F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="306B630F-F3E5-901E-6DA8-73C04018FF55" name="ORDERS_USERS_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:24:34 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A565F09C-1529-9D65-8D2A-2355ED5E4FC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

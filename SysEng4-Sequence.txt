@@ -1,0 +1,15 @@
+@startuml
+actor Клиент
+participant "Web UI" as UI
+participant "Backend API" as API
+database "Database" as DB
+participant "Кухня" as Kitchen
+
+Клиент -> UI: Заполняет форму заказа
+UI -> API: POST /api/orders {JSON}
+API -> DB: INSERT INTO orders, order_items
+DB --> API: Возвращает order_id
+API --> UI: {"orderId": 123, "status": "NEW"}
+UI --> Клиент: Показывает "Заказ принят №123"
+API -> Kitchen: Уведомление о новом заказе
+@enduml

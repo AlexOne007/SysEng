@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ACE6567C-7D61-DE29-3A9D-5DBFFCABB865" name="USERS">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:12:38 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_ID" id="9CFE73DD-3DB5-DADF-8012-D6FE8FA42BA5">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:13:47 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>100</dataTypeScale>
+<ownDataTypeParameters>,0,100</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="04061249-31C4-DCD5-D580-13227B7B7191">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:15:16 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE" id="52E85EBA-1E98-51DD-FB12-D27C6244AE62">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:17:17 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F2FF991-3A25-3C8B-700E-C9AA094C9366" name="USERS_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-08 16:13:47 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CFE73DD-3DB5-DADF-8012-D6FE8FA42BA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
