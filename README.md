@@ -21,6 +21,9 @@
 
 [Пример запуска](SysEng5-successful-start.png)
 
+#### Задание 7
+[220,230,240](SysEng7.md)
+
 #### Задание 8
 [Postman Tests Collection](FastFood%20API%20Tests.postman_collection.json)
 
