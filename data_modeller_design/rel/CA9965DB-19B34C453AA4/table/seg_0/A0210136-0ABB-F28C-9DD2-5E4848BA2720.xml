@@ -1,28 +1,26 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ACE6567C-7D61-DE29-3A9D-5DBFFCABB865" name="CLIENTS">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A0210136-0ABB-F28C-9DD2-5E4848BA2720" name="LOCATIONS">
 <createdBy>Alex</createdBy>
-<createdTime>2026-03-08 16:12:38 UTC</createdTime>
+<createdTime>2026-03-12 08:07:23 UTC</createdTime>
 <ownerDesignName>data_modeller_design</ownerDesignName>
-<ordsAlias>table_1</ordsAlias>
+<ordsAlias>table_5</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CLIENT_ID" id="9CFE73DD-3DB5-DADF-8012-D6FE8FA42BA5">
+<Column name="LOCATION_ID" id="E6F4C0FA-FA9E-B2EF-1A78-ADDC8E2DFADE">
 <createdBy>Alex</createdBy>
-<createdTime>2026-03-08 16:13:47 UTC</createdTime>
+<createdTime>2026-03-12 08:08:00 UTC</createdTime>
 <ownerDesignName>data_modeller_design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>100</dataTypeScale>
-<ownDataTypeParameters>,0,100</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NAME" id="04061249-31C4-DCD5-D580-13227B7B7191">
+<Column name="NAME" id="A75B969D-EA9A-D37D-407A-E9627679B53F">
 <createdBy>Alex</createdBy>
-<createdTime>2026-03-08 16:15:16 UTC</createdTime>
+<createdTime>2026-03-12 08:08:39 UTC</createdTime>
 <ownerDesignName>data_modeller_design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -31,52 +29,52 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="PHONE" id="52E85EBA-1E98-51DD-FB12-D27C6244AE62">
+<Column name="ADDRESS" id="13BDCCA1-3BC9-479E-6EF9-793CB4257563">
 <createdBy>Alex</createdBy>
-<createdTime>2026-03-08 16:17:17 UTC</createdTime>
+<createdTime>2026-03-12 08:09:03 UTC</createdTime>
 <ownerDesignName>data_modeller_design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="USER_ID" id="893937DF-9C8D-C2FB-67B0-2292466AEE90">
+<Column name="LATITUDE" id="29B74EE1-E1F6-230F-23F3-D0CACF559F1B">
 <createdBy>Alex</createdBy>
-<createdTime>2026-03-12 08:19:09 UTC</createdTime>
+<createdTime>2026-03-12 08:09:51 UTC</createdTime>
 <ownerDesignName>data_modeller_design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>7</dataTypeScale>
+<ownDataTypeParameters>,10,7</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="7DE3EF72-0FD4-A31D-734E-96976B42AF2A" referredColumn="F83B93D2-7FE9-BFEB-8C2E-2D2B57FB550F"/>
-</associations>
+</Column>
+<Column name="LONGTITUDE" id="AFE976DE-6639-4BDC-F914-F081FFF9F406">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-12 08:10:15 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>7</dataTypeScale>
+<ownDataTypeParameters>,10,7</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="9F2FF991-3A25-3C8B-700E-C9AA094C9366" name="USERS_PKv2">
+<ind_PK_UK id="9B8F09C2-68A6-6003-FDC8-3484A9E66327" name="LOCATIONS_PK">
 <createdBy>Alex</createdBy>
-<createdTime>2026-03-08 16:13:47 UTC</createdTime>
+<createdTime>2026-03-12 08:08:00 UTC</createdTime>
 <ownerDesignName>data_modeller_design</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="9CFE73DD-3DB5-DADF-8012-D6FE8FA42BA5"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="BFD53BE2-A288-DF60-B33F-CC52BF4D49D9" name="CLIENTS_USERS_FK">
-<createdBy>Alex</createdBy>
-<createdTime>2026-03-12 08:19:09 UTC</createdTime>
-<ownerDesignName>data_modeller_design</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="893937DF-9C8D-C2FB-67B0-2292466AEE90"/>
+<colUsage columnID="E6F4C0FA-FA9E-B2EF-1A78-ADDC8E2DFADE"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

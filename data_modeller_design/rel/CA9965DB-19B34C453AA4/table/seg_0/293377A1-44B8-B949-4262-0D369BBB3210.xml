@@ -20,7 +20,7 @@
 <ownDataTypeParameters>,0,100</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="USER_ID" id="A565F09C-1529-9D65-8D2A-2355ED5E4FC8">
+<Column name="CLIENT_ID" id="A565F09C-1529-9D65-8D2A-2355ED5E4FC8">
 <createdBy>Alex</createdBy>
 <createdTime>2026-03-08 16:24:34 UTC</createdTime>
 <ownerDesignName>data_modeller_design</ownerDesignName>
@@ -57,6 +57,20 @@
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="LOCATION_ID" id="D66A3A84-B60E-A63F-0BEE-0DC8A287DF5C">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-12 08:11:00 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B5645411-A075-57C4-3606-0365542AFF38" referredColumn="E6F4C0FA-FA9E-B2EF-1A78-ADDC8E2DFADE"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="7CEC2FB1-D3E3-A028-51EC-C03E5AF9BD5D" name="ORDERS_PK">
@@ -70,7 +84,7 @@
 <colUsage columnID="1234AA9C-A954-2785-6431-8165382216F5"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="306B630F-F3E5-901E-6DA8-73C04018FF55" name="ORDERS_USERS_FK">
+<ind_PK_UK id="306B630F-F3E5-901E-6DA8-73C04018FF55" name="ORDERS_CLIENTS_FK">
 <createdBy>Alex</createdBy>
 <createdTime>2026-03-08 16:24:34 UTC</createdTime>
 <ownerDesignName>data_modeller_design</ownerDesignName>
@@ -78,6 +92,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A565F09C-1529-9D65-8D2A-2355ED5E4FC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0FB76988-A715-2BFB-0DF8-E94DE30F8F06" name="ORDERS_LOCATIONS_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2026-03-12 08:11:00 UTC</createdTime>
+<ownerDesignName>data_modeller_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D66A3A84-B60E-A63F-0BEE-0DC8A287DF5C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

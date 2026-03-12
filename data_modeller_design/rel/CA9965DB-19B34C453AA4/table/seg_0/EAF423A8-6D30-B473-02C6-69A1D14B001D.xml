@@ -39,9 +39,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<dataTypeScale>20</dataTypeScale>
-<ownDataTypeParameters>,3,20</ownDataTypeParameters>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="PRODUCT_ID" id="EE5E9AE3-7EF0-590E-39F9-C73C5684B89E">
